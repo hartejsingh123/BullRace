@@ -37,7 +37,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SachinBet = new System.Windows.Forms.Label();
             this.KumarBet = new System.Windows.Forms.Label();
-            this.PranshuBet = new System.Windows.Forms.Label();
+            this.HartejBet = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.race = new System.Windows.Forms.Button();
             this.BullNumber = new System.Windows.Forms.NumericUpDown();
@@ -46,7 +46,7 @@
             this.Bets = new System.Windows.Forms.Button();
             this.SachinButton = new System.Windows.Forms.RadioButton();
             this.KumarButton = new System.Windows.Forms.RadioButton();
-            this.PranshuButton = new System.Windows.Forms.RadioButton();
+            this.HartejButton = new System.Windows.Forms.RadioButton();
             this.MaximumBet = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.racetrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bull1)).BeginInit();
@@ -119,7 +119,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.SachinBet);
             this.groupBox1.Controls.Add(this.KumarBet);
-            this.groupBox1.Controls.Add(this.PranshuBet);
+            this.groupBox1.Controls.Add(this.HartejBet);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.race);
             this.groupBox1.Controls.Add(this.BullNumber);
@@ -128,7 +128,7 @@
             this.groupBox1.Controls.Add(this.Bets);
             this.groupBox1.Controls.Add(this.SachinButton);
             this.groupBox1.Controls.Add(this.KumarButton);
-            this.groupBox1.Controls.Add(this.PranshuButton);
+            this.groupBox1.Controls.Add(this.HartejButton);
             this.groupBox1.Controls.Add(this.MaximumBet);
             this.groupBox1.Location = new System.Drawing.Point(-1, 455);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -161,16 +161,16 @@
             this.KumarBet.TabIndex = 12;
             this.KumarBet.Text = "label5";
             // 
-            // PranshuBet
+            // HartejBet
             // 
-            this.PranshuBet.BackColor = System.Drawing.SystemColors.Info;
-            this.PranshuBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PranshuBet.Location = new System.Drawing.Point(649, 50);
-            this.PranshuBet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PranshuBet.Name = "PranshuBet";
-            this.PranshuBet.Size = new System.Drawing.Size(386, 20);
-            this.PranshuBet.TabIndex = 11;
-            this.PranshuBet.Text = "label4";
+            this.HartejBet.BackColor = System.Drawing.SystemColors.Info;
+            this.HartejBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HartejBet.Location = new System.Drawing.Point(649, 50);
+            this.HartejBet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.HartejBet.Name = "HartejBet";
+            this.HartejBet.Size = new System.Drawing.Size(386, 20);
+            this.HartejBet.TabIndex = 11;
+            this.HartejBet.Text = "label4";
             // 
             // label3
             // 
@@ -297,17 +297,17 @@
             this.KumarButton.UseVisualStyleBackColor = true;
             this.KumarButton.CheckedChanged += new System.EventHandler(this.KumarButton_CheckedChanged);
             // 
-            // PranshuButton
+            // HartejButton
             // 
-            this.PranshuButton.AutoSize = true;
-            this.PranshuButton.Location = new System.Drawing.Point(19, 60);
-            this.PranshuButton.Margin = new System.Windows.Forms.Padding(4);
-            this.PranshuButton.Name = "PranshuButton";
-            this.PranshuButton.Size = new System.Drawing.Size(82, 21);
-            this.PranshuButton.TabIndex = 1;
-            this.PranshuButton.Text = "Pranshu";
-            this.PranshuButton.UseVisualStyleBackColor = true;
-            this.PranshuButton.CheckedChanged += new System.EventHandler(this.PranshuButton_CheckedChanged);
+            this.HartejButton.AutoSize = true;
+            this.HartejButton.Location = new System.Drawing.Point(19, 60);
+            this.HartejButton.Margin = new System.Windows.Forms.Padding(4);
+            this.HartejButton.Name = "HartejButton";
+            this.HartejButton.Size = new System.Drawing.Size(82, 21);
+            this.HartejButton.TabIndex = 1;
+            this.HartejButton.Text = "Hartej";
+            this.HartejButton.UseVisualStyleBackColor = true;
+            this.HartejButton.CheckedChanged += new System.EventHandler(this.HartejButton_CheckedChanged);
             // 
             // MaximumBet
             // 
@@ -362,7 +362,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton SachinButton;
         private System.Windows.Forms.RadioButton KumarButton;
-        private System.Windows.Forms.RadioButton PranshuButton;
+        private System.Windows.Forms.RadioButton HartejButton;
         private System.Windows.Forms.Label MaximumBet;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown BettingAmount;
@@ -370,7 +370,7 @@
         private System.Windows.Forms.NumericUpDown BullNumber;
         private System.Windows.Forms.Button race;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label PranshuBet;
+        private System.Windows.Forms.Label HartejBet;
         private System.Windows.Forms.Label SachinBet;
         private System.Windows.Forms.Label KumarBet;
     }

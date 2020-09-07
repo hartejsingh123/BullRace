@@ -2,15 +2,15 @@
 
 namespace BullRace
 {
-    public class Pranshu : Punter
+    public class Hartej : Punter
     {
-        public Pranshu(Bet MyBet, Label MaximumBet, int Money, Label MyLabel) : base(MyBet, MaximumBet, Money, MyLabel)
+        public Hartej(Bet MyBet, Label MaximumBet, int Money, Label MyLabel) : base(MyBet, MaximumBet, Money, MyLabel)
         {
         }
 
         public override void setPunterName()
         {
-            Title = "Pranshu";
+            Title = "Hartej";
         }
     }
 

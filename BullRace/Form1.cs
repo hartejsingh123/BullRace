@@ -27,7 +27,7 @@ namespace BullRace
             Bulls[2] = new Bull() { BullPictureBox = Bull3 };
             Bulls[3] = new Bull() { BullPictureBox = Bull4 };
 
-            punters[0] = pFactory.getPunter("Pranshu", MaximumBet, PranshuBet); //getting Pranshu object from factory class
+            punters[0] = pFactory.getPunter("Hartej", MaximumBet, HartejBet); //getting Hartej object from factory class
             punters[1] = pFactory.getPunter("Kumar", MaximumBet, KumarBet); //getting Kumar object from factory class
             punters[2] = pFactory.getPunter("Sachin", MaximumBet, SachinBet); //getting Sachin object from factory class
 
@@ -38,7 +38,7 @@ namespace BullRace
             }
         }
 
-        private void PranshuButton_CheckedChanged(object sender, EventArgs e)
+        private void HartejButton_CheckedChanged(object sender, EventArgs e)
         {
             setMaximumBetTextLabel(punters[0].money);
         }
@@ -63,7 +63,7 @@ namespace BullRace
         {
             int PunterNum = 0;
 
-            if (PranshuButton.Checked)
+            if (HartejButton.Checked)
             {
                 PunterNum = 0;
             }

@@ -7,7 +7,7 @@ namespace BullRaceTest
     public class UnitTest1
     {
         PunterFactory objFactory = new PunterFactory();
-        Punter Pranshu;
+        Punter Hartej;
         Bull[] Bulls = new Bull[2];
 
         [TestMethod]
@@ -21,9 +21,9 @@ namespace BullRaceTest
             int expectedLose = 0;
             Bulls[0] = new Bull() { BullPictureBox = null };
             Bulls[1] = new Bull() { BullPictureBox = null };
-            Pranshu = objFactory.getPunter("Pranshu", null, null);
-            Pranshu.money = BettingAmount;
-            Pranshu.PlaceBet((int)BettingAmount, BullNumber);
+            Hartej = objFactory.getPunter("Hartej", null, null);
+            Hartej.money = BettingAmount;
+            Hartej.PlaceBet((int)BettingAmount, BullNumber);
 
             bool nowin = true;
             int win = -1;
@@ -34,19 +34,19 @@ namespace BullRaceTest
                     if (Bull.Run(Bulls[i]))
                     {
                         win = i + 1;
-                        Pranshu.Collect(win);
+                        Hartej.Collect(win);
                         nowin = false;
 
                     }
                 }
             }
-            if (Pranshu.gamble.BullNum == win)
+            if (Hartej.gamble.BullNum == win)
             {
-                Assert.AreEqual(expectedWin, Pranshu.money, "Account not credited correctly");
+                Assert.AreEqual(expectedWin, Hartej.money, "Account not credited correctly");
             }
-            if (Pranshu.gamble.BullNum != win)
+            if (Hartej.gamble.BullNum != win)
             {
-                Assert.AreEqual(expectedLose, Pranshu.money, "Account not debited correctly");
+                Assert.AreEqual(expectedLose, Hartej.money, "Account not debited correctly");
 
             }
         }

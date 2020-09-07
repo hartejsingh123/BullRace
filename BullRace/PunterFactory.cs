@@ -10,8 +10,8 @@ namespace BullRace
             Punter p;
             switch (Name.ToLower())
             {
-                case "pranshu":
-                    p = new Pranshu(null, MaximumBet, 50, bet);
+                case "hartej":
+                    p = new Hartej(null, MaximumBet, 50, bet);
                     break;
 
                 case "kumar":
